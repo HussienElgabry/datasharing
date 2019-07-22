@@ -3,12 +3,12 @@ How to share data with a statistician
 
 This is a guide for anyone who needs to share data with a statistician or data scientist. The target audiences I have in mind are:
 
-* Collaborators who need statisticians or data scientists to analyze data for them
-* Students or postdocs in various disciplines looking for consulting advice
-* Junior statistics students whose job it is to collate/clean/wrangle data sets
+* Collaborators who need statisticians or data scientists to analyze data for them.
+* Students or postdocs in various disciplines looking for consulting advice.
+* Junior statistics students whose job it is to collate/clean/wrangle data sets.
 
 The goals of this guide are to provide some instruction on the best way to share data to avoid the most common pitfalls
-and sources of delay in the transition from data collection to data analysis. The [Leek group](http://biostat.jhsph.edu/~jleek/) works with a large
+and sources of delay in the transition from data collection to data analysis. The [Leek group](http://biostat.jhsph.edu/~jleek/) works with a large.
 number of collaborators and the number one source of variation in the speed to results is the status of the data
 when they arrive at the Leek group. Based on my conversations with other statisticians this is true nearly universally.
 
@@ -28,7 +28,7 @@ To facilitate the most efficient and timely analysis this is the information you
 1. The raw data.
 2. A [tidy data set](http://vita.had.co.nz/papers/tidy-data.pdf) 
 3. A code book describing each variable and its values in the tidy data set.  
-4. An explicit and exact recipe you used to go from 1 -> 2,3 
+4. An explicit and exact recipe you used to go from 1 -> 2,3.
 
 Let's look at each part of the data package you will transfer. 
 
@@ -46,10 +46,10 @@ raw form of data:
 
 You know the raw data are in the right format if you: 
 
-1. Ran no software on the data
-1. Did not modify any of the data values
-1. You did not remove any data from the data set
-1. You did not summarize the data in any way
+1. Ran no software on the data.
+1. Did not modify any of the data values.
+1. You did not remove any data from the data set.
+1. You did not summarize the data in any way.
 
 If you made any modifications of the raw data it is not the raw form of the data. Reporting modified data
 as raw data is a very common way to slow down the analysis process, since the analyst will often have to do a
@@ -91,9 +91,9 @@ Alternatively share the data in a [CSV](http://en.wikipedia.org/wiki/Comma-separ
 For almost any data set, the measurements you calculate will need to be described in more detail than you can or should sneak
 into the spreadsheet. The code book contains this information. At minimum it should contain:
 
-1. Information about the variables (including units!) in the data set not contained in the tidy data 
-1. Information about the summary choices you made
-1. Information about the experimental study design you used
+1. Information about the variables (including units!) in the data set not contained in the tidy data.
+1. Information about the summary choices you made.
+1. Information about the experimental study design you used.
 
 In our genomics example, the analyst would want to know what the unit of measurement for each
 clinical/demographic variable is (age in years, treatment by name/dose, level of diagnosis and how heterogeneous). They 
@@ -149,13 +149,13 @@ In many cases, the person who collected the data has incentive to make it tidy f
 of collaboration. They may not know how to code in a scripting language. In that case, what you should provide the statistician
 is something called [pseudocode](http://en.wikipedia.org/wiki/Pseudocode). It should look something like:
 
-1. Step 1 - take the raw file, run version 3.1.2 of summarize software with parameters a=1, b=2, c=3
-1. Step 2 - run the software separately for each sample
-1. Step 3 - take column three of outputfile.out for each sample and that is the corresponding row in the output data set
+1. Step 1 - take the raw file, run version 3.1.2 of summarize software with parameters a=1, b=2, c=3.
+1. Step 2 - run the software separately for each sample.
+1. Step 3 - take column three of outputfile.out for each sample and that is the corresponding row in the output data set.
 
 You should also include information about which system (Mac/Windows/Linux) you used the software on and whether you 
 tried it more than once to confirm it gave the same results. Ideally, you will run this by a fellow student/labmate
-to confirm that they can obtain the same output file you did. 
+to confirm that they can obtain the same output file you did.
 
 
 
@@ -170,9 +170,9 @@ checks.
 
 You should then expect from the statistician:
 
-1. An analysis script that performs each of the analyses (not just instructions)
-1. The exact computer code they used to run the analysis
-1. All output files/figures they generated. 
+1. An analysis script that performs each of the analyses (not just instructions).
+1. The exact computer code they used to run the analysis.
+1. All output files/figures they generated.
 
 This is the information you will use in the supplement to establish reproducibility and precision of your results. Each
 of the steps in the analysis should be clearly explained and you should ask questions when you don't understand
